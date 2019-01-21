@@ -10,7 +10,8 @@
 
         public static double CalculateTriangleArea(double side1, double side2, double side3)
         {
-            return double.NaN;
+            var triangle = new Triangle(side1, side2, side3);
+            return triangle.GetArea();
         }
     }
 }
