@@ -4,7 +4,8 @@
     {
         public static double CalculateCircleArea(double radius)
         {
-            return double.NaN;
+            var circle = new Circle(radius);
+            return circle.GetArea();
         }
 
         public static double CalculateTriangleArea(double side1, double side2, double side3)
