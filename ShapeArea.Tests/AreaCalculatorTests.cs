@@ -57,23 +57,23 @@ namespace ShapeArea.Tests
             AssertKindaEqual(expected, area);
 
             area = AreaCalculator.CalculateTriangleArea(side1, side3, side2);
-            Assert.IsTrue(double.IsNaN(area));
+            Assert.IsFalse(double.IsNaN(area));
             AssertKindaEqual(expected, area);
 
             area = AreaCalculator.CalculateTriangleArea(side2, side1, side3);
-            Assert.IsTrue(double.IsNaN(area));
+            Assert.IsFalse(double.IsNaN(area));
             AssertKindaEqual(expected, area);
 
             area = AreaCalculator.CalculateTriangleArea(side2, side3, side1);
-            Assert.IsTrue(double.IsNaN(area));
+            Assert.IsFalse(double.IsNaN(area));
             AssertKindaEqual(expected, area);
 
             area = AreaCalculator.CalculateTriangleArea(side3, side1, side2);
-            Assert.IsTrue(double.IsNaN(area));
+            Assert.IsFalse(double.IsNaN(area));
             AssertKindaEqual(expected, area);
 
             area = AreaCalculator.CalculateTriangleArea(side3, side2, side1);
-            Assert.IsTrue(double.IsNaN(area));
+            Assert.IsFalse(double.IsNaN(area));
             AssertKindaEqual(expected, area);
         }
 
